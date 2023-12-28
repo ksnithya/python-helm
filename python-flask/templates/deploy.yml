@@ -17,8 +17,8 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           resources:
             limits:
-              memory: "4Gi"
-              cpu: "1000m"
-            requests:
               memory: "2Gi"
               cpu: "500m"
+            requests:
+              memory: "1Gi"
+              cpu: "300m"
